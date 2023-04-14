@@ -10,7 +10,8 @@ import org.junit.runner.RunWith;
         glue = "com/smartbear/stepdefinitions",
         dryRun = false,
         tags = "@QA_smartBearRegression",
-        plugin = {"pretty", "html:target/uiReport.html", "rerun:target/uiFailedTests.txt"}
+        plugin = {"pretty", "html:target/uiReport.html", "rerun:target/uiFailedTests.txt",
+                "json:target/cucumber-reports/cucumber.json"}
 )
 public class SmartBearRunner {
 }
